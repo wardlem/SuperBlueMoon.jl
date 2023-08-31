@@ -2,5 +2,6 @@ using SuperBlueMoon
 using Test
 
 @testset "SuperBlueMoon.jl" begin
-    # Write your tests here.
+    @test SuperBlueMoon.greet_super_blue_moon() == "Hello SuperBlueMoon!"
+    @test SuperBlueMoon.greet_super_blue_moon() != "Hello world!"
 end
